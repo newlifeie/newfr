@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:image" content="images/d3.jpg">
+  <title>Pourquoi les grandes marques sont-elles FURIEUSES contre ces genouillères de compression révolutionnaires ?</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo.png">
+  <style>
+    html {
+      box-sizing: border-box;
+      font-family: sans-serif;
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      -ms-overflow-style: scrollbar;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: inherit
+    }
+
+    body {
+      margin: 0;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f5f5f5;
+      position: relative
+    }
+
+    @media (min-width:768px) {
+      body {
+        font-size: 18px
+      }
+    }
+
+    @media (min-width:1200px) {
+      body {
+        font-size: 20px
+      }
+    }
+
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 1024px;
+      position: relative
+    }
+
+    .container-sm {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 1024px;
+      position: relative
+    }
+
+    .container-sm:after,
+    .container-sm:before,
+    .container:after,
+    .container:before {
+      content: &quot; &quot;;
+      display: table
+    }
+
+    .container-sm:after,
+    .container:after {
+      clear: both
+    }
+
+    .row {
+      margin-left: -8px;
+      margin-right: -8px
+    }
+
+    @media (min-width:768px) {
+      .row {
+        margin-left: -12px;
+        margin-right: -12px
+      }
+    }
+
+    @media (min-width:992px) {
+      .row {
+        margin-left: -16px;
+        margin-right: -16px
+      }
+    }
+
+    .row:after,
+    .row:before {
+      content: &quot; &quot;;
+      display: table
+    }
+
+    .row:after {
+      clear: both
+    }
+
+    .column {
+      position: relative;
+      min-height: 1px;
+      padding-left: 8px;
+      padding-right: 8px;
+      float: left;
+      width: 100%;
+      margin-bottom: 16px
+    }
+
+    @media (min-width:768px) {
+      .column {
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 24px
+      }
+    }
+
+    @media (min-width:992px) {
+      .column {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 32px
+      }
+    }
+
+    .column-6 {
+      width: 50%
+    }
+
+    @media (min-width:576px) {
+      .column-sm-4 {
+        width: 33.333333%
+      }
+    }
+
+    .mb-0 {
+      margin-bottom: 0 !important
+    }
+
+    .mb-16 {
+      margin-bottom: 16px !important
+    }
+
+    .text-center {
+      text-align: center !important;
+      background-color: rgb(246, 246, 246);
+    }
+
+    a {
+      background: 0 0;
+      text-decoration: none;
+      color: #4b78a7;
+      font-weight: 700
+    }
+
+    a:active,
+    a:hover {
+      outline-width: 0;
+      text-decoration: underline;
+      color: #4b78a7
+    }
+
+    .text-primary {
+      color: #dd3700 !important
+    }
+
+    .text-secondary {
+      color: #666 !important
+    }
+
+    .strong,
+    strong {
+      font-weight: 700
+    }
+
+    .small {
+      font-size: 70%
+    }
+
+    blockquote,
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0 0 16px 0
+    }
+
+    @media (min-width:768px) {
+
+      blockquote,
+      h2,
+      h3,
+      p {
+        margin: 0 0 24px 0
+      }
+    }
+
+    @media (min-width:992px) {
+
+      blockquote,
+      h2,
+      h3,
+      p {
+        margin: 0 0 32px 0
+      }
+    }
+
+    blockquote {
+      padding: 16px
+    }
+
+    @media (min-width:768px) {
+      blockquote {
+        padding: 24px
+      }
+    }
+
+    @media (min-width:992px) {
+      blockquote {
+        padding: 32px
+      }
+    }
+
+    blockquote h3 {
+      margin-bottom: 0;
+      line-height: 1.25
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: 900;
+      line-height: 1.1;
+      color: #000
+    }
+
+    h1 {
+      font-size: 24px
+    }
+
+    h2 {
+      font-size: 20px
+    }
+
+    h3 {
+      font-size: 16px
+    }
+
+    @media (min-width:768px) {
+      h1 {
+        font-size: 36px
+      }
+
+      h2 {
+        font-size: 30px
+      }
+
+      h3 {
+        font-size: 24px
+      }
+    }
+
+    @media (min-width:992px) {
+      h1 {
+        font-size: 42px
+      }
+
+      h2 {
+        font-size: 36px
+      }
+
+      h3 {
+        font-size: 24px
+      }
+    }
+
+    img {
+      vertical-align: middle;
+      border-style: none;
+      border: 0
+    }
+
+    .img-fluid {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .btn {
+      display: block;
+      line-height: 40px;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      padding: 0 16px;
+      font-weight: 700;
+      border-radius: 14px;
+      border: 0
+    }
+
+    .btn:focus,
+    .btn:hover {
+      text-decoration: none;
+      outline: 0;
+      cursor: pointer
+    }
+
+    @media (min-width:768px) {
+      .btn {
+        font-size: 24px;
+        padding: 12px 16px
+      }
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #003366
+    }
+
+    .btn-primary:focus,
+    .btn-primary:hover {
+      color: #fff;
+      background-color: #2f6194
+    }
+
+    .btn-secondary {
+      color: #333;
+      background-color: #f5f5f5
+    }
+
+    .btn-secondary:focus,
+    .btn-secondary:hover {
+      color: #fff;
+      background-color: #ff4000
+    }
+
+    .header {
+      background: #003366;
+      padding: 12px 0;
+      position: relative;
+      border-bottom: 1px solid #e5e5e5
+    }
+
+    @media (min-width:768px) {
+      .header {
+        padding: 20px 0
+      }
+    }
+
+    .header-logo {
+      float: left;
+      line-height: 24px;
+    }
+
+    .header-logo&gt;.logo-icon {
+      height: 24px;
+      width: auto;
+      float: left
+    }
+
+    .header-logo&gt;.logo-text {
+      float: left;
+      margin-left: 4px;
+      font-size: 16px;
+      font-weight: 700;
+      color: white;
+    }
+
+    @media (min-width:768px) {
+      .header-logo {
+        line-height: 40px
+      }
+
+      .header-logo&gt;.logo-icon {
+        height: 40px
+      }
+
+      .header-logo&gt;.logo-text {
+        margin-left: 8px;
+        font-size: 24px
+      }
+    }
+
+    .header-links {
+      float: right;
+      display: none
+    }
+
+    @media (min-width:768px) {
+      .header-links {
+        display: block
+      }
+    }
+
+    .header-links a+a {
+      margin-left: 32px
+    }
+
+    .header-link {
+      font-size: 14px;
+      line-height: 30px;
+      color: rgb(139, 139, 139);
+      font-weight: 400;
+
+    }
+
+    .header-link:hover {
+      color: #000
+    }
+
+    .header .btn {
+      float: left;
+      border-radius: 20px;
+      padding: 0 24px;
+      font-size: 16px;
+      vertical-align: middle
+    }
+
+    .content {
+      background: #fff;
+      padding: 16px 0;
+      padding-bottom: 0px;
+    }
+
+    @media (min-width:768px) {
+      .content {
+        padding: 32px 0;
+        padding-bottom: 0px;
+      }
+    }
+
+    .footer {
+      padding: 16px 0;
+      font-size: 75%;
+      color: #666;
+      text-align: center
+    }
+
+    @media (min-width:768px) {
+      .footer {
+        padding: 32px 0
+      }
+    }
+
+    .footer a,
+    .footer a:focus,
+    .footer a:hover {
+      color: #666
+    }
+  </style>
+
+  <script type="text/javascript" src="js/sharethis.js#property=5fcf2ab71aaf5800135bdf64&amp;product=sticky-share-buttons" async="async"></script>
+
+</head>
+
+<body>
+
+
+  <div class="header">
+    <div class="container">
+      <div class="header-logo">
+        <img class="logo-icon" src="images/logo.png">
+        <div class="logo-text">LifeTechTrend</div>
+      </div>
+      <div class="header-links">
+        <a class="btn btn-primary" href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank" style="background-color: #FF4000;">
+          N° 1 des genouillères de compression
+          </a>
+        <a class="header-link">Publicité</a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container-sm">
+      <div class="text-center" style="background-color: #fff;">
+        <p class="text-primary strong small mb-16">Accueil > Actuel et tendance > Soins des genoux</p>
+        <h1 class="mb-16">Pourquoi les grandes marques sont-elles <i>FURIEUSES</i> contre ces genouillères de compression révolutionnaires ?</h1>
+        <p class="text-secondary strong small">By Laura Simons &middot; January 20, 2021</p>
+      </div>
+    </div>
+    <div class="container">
+      <p><img src="images/hero.jpeg" class="img-fluid"></p>
+    </div>
+    <div class="container-sm">
+      <p> <strong>Compte tenu du fait que plus de 100 millions de personnes souffrent annuellement de douleurs chroniques aux genoux et que le coût des traitements ne cesse d'augmenter, ces genouillères de compression révolutionnaires ne pourraient pas arriver à un moment plus opportun.</strong></p>
+      <p>Des honoraires hors de prix lors de consultations médicales, des médicaments nocifs et des interventions chirurgicales invasives et risquées ne sont que quelques-unes des raisons pour lesquelles les personnes souffrant de douleurs aux genoux sont mécontentes. Vous dépensez des sommes toujours plus importantes chaque fois pour ensuite vous retrouver déçu et sans le sou.</p>
+      <p>Au bout du compte... c'est un énorme gaspillage d'argent.</p>
+      <p>En vérité, les personnes qui souffrent de douleurs aux genoux recherchent des solutions plus économiques pour soulager leurs douleurs sans se ruiner.</p>
+      <p>Heureusement, Circa Knee™ peut vous aider à apaiser votre douleur.</p>
+      <p>Caresole®, une start-up américaine, a développé une technologie innovante et brevetée pour la genouillère de compression appelée Circa Knee™, laquelle révolutionne totalement la vie quotidienne de personnes atteintes de douleurs aux genoux, et qui peut les aider à réaliser plus facilement des tâches courantes.</p>
+      <h3>Protégez et soignez vos genoux dès maintenant !</h3>
+      <p>À l'origine, le fondateur de Caresole, Thomas Blumel, a créé Circa Knee™ dans le but de remédier à ses propres problèmes de genoux. « J'ai été confronté à des problèmes de ménisques et de tendinites pendant un certain temps... mes genoux étaient en piteux état ! La situation était telle à un moment donné que je pouvais à peine rester debout plus de 30 minutes d'affilée. Mais avec le temps et diverses techniques, ainsi qu'avec l'aide de nombreux orthopédistes et podologues, j'ai le sentiment d'avoir accompli des progrès considérables dans le développement de ces genouillères. Elles représentent l'œuvre de ma vie, fabriquées de manière à offrir un soutien et à protéger mes genoux sans ressentir d'inconfort ou de douleurs. À présent, mon souhait le plus cher est d'aider les autres et de donner au suivant, » déclare le fondateur de l'entreprise.</p>
+      <h3>Si vous souffrez de douleurs tenaces aux genoux, ce produit pourrait bien être la solution idéale pour vous.</h3>
+      <p>Selon l'Institut de médecine (Institute of Medicine - situé aux États-Unis), près d'une personne sur trois éprouve actuellement une forme ou une autre de douleur chronique aux genoux. « Il s'agit d'un problème largement répandu auquel je cherche à remédier. Je veux que les gens reprennent le contrôle de leur vie », affirme M. Blumel. « Il règne une grande confusion en ce qui concerne les douleurs aux genoux. » En fait, le New York Times a récemment publié un article à ce sujet :</p>
+      <p><b><i>« Une des principales erreurs commises par les personnes souffrant de douleurs aux genoux est de limiter les mouvements de l'articulation affectée, ce qui entraîne une raideur et une faiblesse qui ne font qu'aggraver la situation. »</i></b></p>
+      <p>Qu'est-ce que cela signifie pour vous ? Pour vaincre les douleurs articulaires, vous DEVEZ continuer à bouger. Mais lorsque vous souffrez de douleurs et de raideurs, le moindre mouvement est la dernière chose à laquelle vous pensez. Quelle est la solution alors ? « Vous devez continuer à bouger et à demeurer actif, bien que vous ne le vouliez pas. Oubliez les pilules et la chirurgie -- c'est pour cette raison que j'ai créé ces genouillères en vue d'offrir une solution entièrement naturelle. Un corps actif et aligné se guérit de lui-même, » affirme Blumel. « Voilà pourquoi j'ai mis ces  <a href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank">genouillères à la disposition du public avec une remise de 40 %, et ce, pour une durée limitée.</a></p>
+      <p>« Laissez-moi vous dire qu'offrir cette remise spéciale a provoqué des remous au sein des grandes entreprises pharmaceutiques et de l'industrie orthopédique. Croyez-moi, ces grands fabricants de genouillères ridiculement chères et encombrantes sont mécontents de constater que nous proposons une alternative aussi abordable. » « Dès l'instant où ils ont été informés de notre initiative, ils m'ont demandé de ne pas lancer cette offre spéciale, mais je ne céderai jamais aux menaces de ces gros bonnets, jamais. »</p>
+      <p> <a href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank"><img src="images/11.jpeg" width="100%"></a></p>
+      <h3>Les traitements coûteux et inefficaces sont désormais chose du passé !</h3>
+      <p>Caresole® a enfin trouvé sa place dans le cœur de victimes de douleurs aux genoux. Grâce à une absorption adéquate des impacts, à un soutien des articulations et à une technologie de stabilisation de pointe, les genouillères de compression Caresole® Circa Knee soulagent et protègent vos genoux contre l'inconfort et l'inflammation, ce qui entraîne la suppression de la douleur au niveau des genoux.</p>
+      <p>Le plus intéressant, c'est que vous n'avez pas à investir dans des chaussures sur mesure dispendieuses ou des genouillères encombrantes pouvant vous coûter des centaines d'euros et vous laisser sans le sou !</p>
+      <p><b>En exclusivité et pour une durée limitée, Caresole propose ses genouillères de compression brevetées Circa Knee avec une remise de 40 % !</b></p>
+      <p>Vous pouvez vous procurer vos propres genouillères, jusqu'à épuisement des stocks, <a href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank">en visitant leur site internet ici.</a></p>
+
+
+        <a href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank">
+          <center><img src="images/d3.jpeg" width="100%"></center>
+        </a>
+        <br>
+      <h3>Soulagez et protégez vos genoux dès maintenant</h3>
+        <p>Puisque vous connaissez l'existence de ces genouillères révolutionnaires, laissez-moi vous montrer à quel point il est facile de les utiliser. Il vous suffit de suivre ces 3 étapes :</p>
+        <p><strong>Étape 1 : </strong>  Commandez vos  <a href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank">Caresole® Circa Knee Compression Sleeves</a> dès aujourd'hui pour profiter de la promotion offrant une</p>
+        <p><strong>Étape 2 : </strong>  Lorsque vous recevez votre genouillère, portez-la fièrement et profitez d'un soulagement supérieur - sans le prix démesuré.</p>
+        <p><strong>Étape 3 : </strong> Portez votre genouillère sous un jean, un pantalon, une jupe, une robe ou un short tous les jours.</p>
+        <p><strong>Petit conseil : </strong> vous connaissez quelqu'un qui souffre de douleurs et de gênes au niveau des genoux ? Cette genouillère est le cadeau idéal et épargnera beaucoup d'argent, de souffrance et de temps à la personne qui la reçoit.</p>
+
+        <p><a href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank"><strong>REMARQUE : </strong>en raison de la très forte demande pour la genouillère de compression Circa Knee, Caresole ne peut offrir qu'un nombre limité d'articles bénéficiant de cette réduction de 40 %.</a>
+        </p>
+        <p><a href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank">Pour en savoir plus sur cette promotion spéciale, cliquez sur le bouton ci-dessous.</a></p>
+
+
+        <div class="clear"></div>
+        <p> <a class="btn btn-primary" href="https://www.frscosr.com/8SQSC2G/6J4SC45/?rotate_uid=1" target="_blank">Cliquez ici pour obtenir votre RÉDUCTION DE 40 % sur votre Circa Knee aujourd'hui</a> </p>
+      </div>
+    </div>
+    <br>
+    <div class="footer" style="background-color: rgb(243, 243, 243);padding: 30px 10px;">
+      <div class="container">
+
+        <p>Copyright © 2020 - Tous Droits Réservés.<br id="idyoq8">
+          <br>
+          "Caresole.com", "Caresole®" et le logo Caresole® sont des marques déposées de GMT ASSETS LLC.<br>
+          <br>
+          Ce site internet est une publicité et non un véritable article de presse. Ce produit n'est pas destiné à diagnostiquer, traiter, guérir ou prévenir une maladie ou un état de santé quelconque. Les informations fournies sur ce site ne doivent pas être considérées comme un substitut à l'avis d'un médecin ou d'un autre professionnel de la santé. Les résultats peuvent varier, puisque chaque individu est différent.<br>
+         
+        </p>
+        <p> <a href="https://www.buycircaknee.com/fr/policy.html" target="_blank">Politique de confidentialité</a> | <a href="https://www.buycircaknee.com/fr/terms.html" target="_blank">Conditions d’utilisation  </a>
+        </p>
+        
+      </div>
+    </div>
+    
+
+</body>
+
+</html>
